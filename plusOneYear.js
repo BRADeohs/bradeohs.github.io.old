@@ -15,8 +15,8 @@ class MyDate extends Date {
 }
 
  for (let i = 2; i < 9; i++) {
-  let s = ""resultTable:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
-  let ti = document.querySelector(s)
+  let s = "resultTable:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
+  let ti = $(s)
   dM(ti);
 }
 var qi = document.querySelector("body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > strong");
