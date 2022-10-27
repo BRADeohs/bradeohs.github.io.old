@@ -1,5 +1,22 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1096 610" width="1096" height="610">
+<svg onload="init(evt)" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1096 610" width="1096" height="610">
 	<title>51temp-pdf</title>
+	<script>
+	var info,infoElem;
+    function init(e) {
+        if ( window.svgDocument == null )
+    var texty1 = document.getElementByID('date1');
+    var time1 = new Date();
+    var textnode1 = document.createTextNode(time1);
+    texty1.appendChild(textnode1);
+	var texty2 = document.getElementByID('date2');
+    var time2 = new Date();
+    var textnode2 = document.createTextNode(time2);
+    texty2.appendChild(textnode2);
+    }
+    function changeColor(c){
+        infoElem.setAttributeNS(null,"fill", c);
+    }
+	</script>
 	<defs>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
 			<path d="m0-809h1096v1419h-1096z"/>
@@ -17,26 +34,26 @@
 	<g id="Page 1" clip-path="url(#cp1)">
 		<path id="Path 1" class="s0" d="m0-808.9h1096v1418.9h-1096z"/>
 		<use id="Bitmap" href="#img1" transform="matrix(.895,0,0,.896,111.928,321.571)"/>
-		<text id="SCANNED ON: ________________" style="transform: matrix(.895,0,0,.896,391.641,357.92)" >
+		<text id="SCANNED_on" style="transform: matrix(.895,0,0,.896,391.641,357.92)" >
 			<tspan x="0" y="0" class="t1">SCANNED ON: ________________
 </tspan>
 		</text>
-		<text id="RECORDED IN PS: ____________" style="transform: matrix(.895,0,0,.896,391.641,430.135)" >
+		<text id="RECORDED_in: ____________" style="transform: matrix(.895,0,0,.896,391.641,430.135)" >
 			<tspan x="0" y="0" class="t1">RECORDED IN PS: ____________
 </tspan>
 		</text>
-		<text id="SCANNED BY: JONATHAN MAYES" style="transform: matrix(.895,0,0,.896,391.641,502.35)" >
+		<text id="SCANNED_by" style="transform: matrix(.895,0,0,.896,391.641,502.35)" >
 			<tspan x="0" y="0" class="t1">SCANNED BY: JONATHAN MAYES
 </tspan>
 		</text>
-		<text id="10/13/22" style="transform: matrix(.895,0,0,.896,708.8,342.352)" >
-			<tspan x="0" y="0" class="t2">10/13/22
+		<text id="date1" style="transform: matrix(.895,0,0,.896,708.8,342.352)" >
+			<tspan x="0" y="0" class="t2">10/27/22
 </tspan>
 		</text>
 		<use id="Bitmap" href="#img2" transform="matrix(.895,0,0,.896,454.876,60.91)"/>
 		<path id="Path 9" class="s3" d="m88.9 289.9h902.6v258h-902.6z"/>
-		<text id="10/13/22" style="transform: matrix(.895,0,0,.896,705.219,422.951)" >
-			<tspan x="0" y="0" class="t2">10/13/22
+		<text id="date2" style="transform: matrix(.895,0,0,.896,705.219,422.951)" >
+			<tspan x="0" y="0" class="t2">10/27/22
 </tspan>
 		</text>
 	</g>
