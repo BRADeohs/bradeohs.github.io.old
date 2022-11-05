@@ -2,7 +2,7 @@
 
 class MyDate extends Date {
   addDays(days) {
-    var date = new MyDate(this.valueOf());
+    let date = new MyDate(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
   }
