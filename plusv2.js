@@ -43,7 +43,7 @@ function bakup() {
 }
 
 function iD(select) {
-  let tii = select.split(' ');
+  let tii = select.textcontent.split(' ');
   let tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
   let yyyy = nextYear.getFullYear();
@@ -54,7 +54,7 @@ function iD(select) {
 }
 
 function pQ(select) {
-  let tii = select.split(' - ');
+  let tii = select.textcontent.split(' - ');
   let tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
   let fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
