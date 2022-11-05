@@ -14,18 +14,26 @@ function getElementByXpath(path) {
  for (let i = 2; i < 9; i++) {
   let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
   let ti = document.querySelector(s)
-  dM(ti);
+  if (ti != null) {
+    dM(ti);
+  } else {
+    bakup();
+  }
+  
 }
 var qi = document.querySelector("body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > strong");
 eM(qi);
-for (let i = 2; i < 9; i++) {
-  let x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
-  //let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
-  //let ti = document.querySelector(s)
-  iD(x);
+
+function bakup() {
+  for (let i = 2; i < 9; i++) {
+    let x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
+    //let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
+     //let ti = document.querySelector(s)
+    iD(x);
+    }
+    var mi=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[18]");
+    pQ(mi);
 }
-var mi=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[18]");
-pQ(mi);
 
 function iD(select) {
   let tii = select.split(' ');
