@@ -1,6 +1,6 @@
 class MyDate extends Date {
   addDays(days) {
-    let date = new MyDate(this.valueOf());
+    let MyDate = new MyDate(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
   }
