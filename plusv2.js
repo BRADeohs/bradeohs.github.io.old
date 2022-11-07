@@ -44,8 +44,8 @@ function bakup() {
 }
 
 function iD(select) {
-  let tii = select.textcontent.split(' ');
-  tii = select.textcontent.split(' ');
+  let tii = select.textcontent;
+  tii = tii.split(' ');
   let tdi = new MyDate(tii[1]);
   tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
@@ -62,8 +62,8 @@ function iD(select) {
 }
 
 function pQ(select) {
-  let tii = select.textcontent.split(' - ');
-  tii = select.textcontent.split(' - ');
+  let tii = select.textcontent;
+  tii = tii.split(' ');
   let tdi = new MyDate(tii[1]);
   tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
