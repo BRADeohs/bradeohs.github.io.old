@@ -13,7 +13,9 @@ function getElementByXpath(path) {
 
  for (let i = 2; i < 9; i++) {
   let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
+  s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
   let ti = document.querySelector(s)
+  ti = document.querySelector(s)
   if (ti != null) {
     dM(ti);
   } else {
@@ -23,7 +25,7 @@ function getElementByXpath(path) {
 }
 
 var qi = document.querySelector("body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > strong");
-
+qi = document.querySelector("body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > strong");
 if (qi != null) {
     eM(qi);
 } 
@@ -43,41 +45,65 @@ function bakup() {
 
 function iD(select) {
   let tii = select.textcontent.split(' ');
+  tii = select.textcontent.split(' ');
   let tdi = new MyDate(tii[1]);
+  tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
+  nextYear = tdi.addDays(364);
   let yyyy = nextYear.getFullYear();
+  yyyy = nextYear.getFullYear();
   let mm = nextYear.getMonth() + 1;
+  mm = nextYear.getMonth() + 1;
   let dd = nextYear.getDate();
+  dd = nextYear.getDate();
   let fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
+  fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
   select.textcontent = fin;   
 }
 
 function pQ(select) {
   let tii = select.textcontent.split(' - ');
+  tii = select.textcontent.split(' - ');
   let tdi = new MyDate(tii[1]);
+  tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
+  nextYear = tdi.addDays(364);
   let fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
+  fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
   let fin = tii[0] + ' - ' + fDate;
+  fin = tii[0] + ' - ' + fDate;
   select.textcontent = fin;   
 }
 
 
 function dM(select) {
   let tii = select.innerHTML.split(' ');
+  tii = select.innerHTML.split(' ');
   let tdi = new MyDate(tii[1]);
+  tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
+  nextYear = tdi.addDays(364);
   let yyyy = nextYear.getFullYear();
+  yyyy = nextYear.getFullYear();
   let mm = nextYear.getMonth() + 1;
+  mm = nextYear.getMonth() + 1;
   let dd = nextYear.getDate();
+  dd = nextYear.getDate();
   let fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy;
+  fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy;
   select.innerHTML = fin;   
 }
 
 function eM(select) {
   let tii = select.innerHTML.split(' - ');
+  tii = select.innerHTML.split(' - ');
   let tdi = new MyDate(tii[1]);
+  tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
+  nextYear = tdi.addDays(364);
   let fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
+  fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
   let fin = tii[0] + ' - ' + fDate;
+  fin = tii[0] + ' - ' + fDate;
   select.innerHTML = fin;   
 }
