@@ -32,13 +32,13 @@ var qi = document.querySelector("body > div > div > table.message > tbody > tr:n
 eM(qi);
 
 function bakup() {
-  for (let i = 2; i < 9; i++) {
+  for (let i = 12; i < 19; i++) {
     let x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
     //let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
      //let ti = document.querySelector(s)
     iD(x);
     }
-    var mi=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[18]");
+    var mi=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[10]");
     pQ(mi);
 }
 
