@@ -42,7 +42,7 @@ function bakup() {
 }
 
 function iD(select) {
-  let tii = select.textcontent;
+  let tii = select.textContent;
   tii = tii.split(' ');
   let tdi = new MyDate(tii[1]);
   tdi = new MyDate(tii[1]);
@@ -56,11 +56,11 @@ function iD(select) {
   dd = nextYear.getDate();
   let fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
   fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
-  select.textcontent = fin;   
+  select.textContent = fin;   
 }
 
 function pQ(select) {
-  let tii = select.textcontent;
+  let tii = select.textContent;
   tii = tii.split(' ');
   let tdi = new MyDate(tii[1]);
   tdi = new MyDate(tii[1]);
@@ -70,7 +70,7 @@ function pQ(select) {
   fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
   let fin = tii[0] + ' - ' + fDate;
   fin = tii[0] + ' - ' + fDate;
-  select.textcontent = fin;   
+  select.textContent = fin;   
 }
 
 
