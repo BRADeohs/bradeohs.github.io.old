@@ -35,7 +35,7 @@ if (qi != null) {
 } 
 
 function bakup() {
-  for (let i = 13; i < 19; i++) {
+  for (let i = 15; i < 21; i++) {
     let x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
     //x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
     iD(x);
