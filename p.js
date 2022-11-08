@@ -58,7 +58,7 @@ function iD(select) {
   //mm = nextYear.getMonth() + 1;
   let dd = nextYear.getDate();
   //dd = nextYear.getDate();
-  let fin = tii[0] + tii[1] + tii[2] + tii[3] + tii[4] ' ' + mm + '/' + dd + '/' + yyyy +  + tii[5] + tii[6];
+  let fin = tii[0] + tii[1] + tii[2] + tii[3] + tii[4] + ' ' + mm + '/' + dd + '/' + yyyy +  + tii[5] + tii[6];
   //fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
   select.textContent = fin;   
 }
