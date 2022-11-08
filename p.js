@@ -35,11 +35,9 @@ if (qi != null) {
 } 
 
 function bakup() {
-  for (let i = 12; i < 19; i++) {
+  for (let i = 13; i < 19; i++) {
     let x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
     //x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
-    //let s = "body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(3) > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > strong";
-     //let ti = document.querySelector(s)
     iD(x);
     }
     let mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[10]");
@@ -50,7 +48,7 @@ function bakup() {
 function iD(select) {
   let tii = select.textContent;
   tii = tii.split(' ');
-  let tdi = new MyDate(tii[1]);
+  let tdi = new MyDate(tii[5]+ tii[6] + tii[7]);
   //tdi = new MyDate(tii[1]);
   let nextYear = tdi.addDays(364);
   //nextYear = tdi.addDays(364);
@@ -60,7 +58,7 @@ function iD(select) {
   //mm = nextYear.getMonth() + 1;
   let dd = nextYear.getDate();
   //dd = nextYear.getDate();
-  let fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
+  let fin = tii[0] + tii[1] + tii[2] + tii[3] + tii[4] ' ' + mm + '/' + dd + '/' + yyyy +  + tii[5] + tii[6];
   //fin = tii[0] + ' ' + mm + '/' + dd + '/' + yyyy + tii[2] + tii[3] + tii[4] + tii[5] + tii[6];
   select.textContent = fin;   
 }
