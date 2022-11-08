@@ -40,9 +40,9 @@ function bakup() {
     //x=getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[" + i + "]");
     iD(x);
     }
-    let mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[12]");
+  let mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[12]");
     //mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[10]");
-    pQ(mi);
+  pQ(mi);
 }
 
 function iD(select) {
@@ -73,7 +73,8 @@ function pQ(select) {
   //nextYear = tdi.addDays(364);
   let fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
   //fDate = nextYear.toLocaleString('en-US', { dateStyle: 'long' });
-  let fin = tii[0] + tii[1] + tii[2] + tii[3] + tii[4] + ' ' + fDate;
+  tii[1] = fDate;
+  let fin = tii.join(' ');
   //fin = tii[0] + ' - ' + fDate;
   select.textContent = fin;   
 }
