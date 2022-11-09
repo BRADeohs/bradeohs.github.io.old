@@ -33,6 +33,7 @@ var qi = document.querySelector("body > div > div > table.message > tbody > tr:n
 //qi = document.querySelector("body > div > div > table.message > tbody > tr:nth-child(3) > td > table > tbody > tr > td > div:nth-child(1) > font > div > div > div:nth-child(4) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > strong");
 if (qi != null) {
     eM(qi);
+    window.print();
 } 
 
 function bakup() {
@@ -44,6 +45,7 @@ function bakup() {
   let mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[12]");
     //mi = getElementByXpath("/html/body/div/div/table[2]/tbody/tr[3]/td/table/tbody/tr/td/div[1]/font/text()[10]");
   pQ(mi);
+    window.print();
 }
 
 function iD(select) {
